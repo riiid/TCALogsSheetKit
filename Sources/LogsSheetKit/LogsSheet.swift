@@ -129,9 +129,9 @@ private let dateFormatter: ISO8601DateFormatter = {
 
 struct LogsSheet_Previews: PreviewProvider {
   static private let logsStub: [ActionLog] = [
-    ActionLog(message: "stub"),
-    ActionLog(message: "stub"),
-    ActionLog(message: "stub")
+    ActionLog(message: "stub action log"),
+    ActionLog(message: "stub action log"),
+    ActionLog(message: "stub action log")
   ]
 
   static var previews: some View {
