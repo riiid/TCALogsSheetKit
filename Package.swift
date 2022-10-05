@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-  name: "LogsSheetKit",
+  name: "ComposableLogsSheetKit",
   platforms: [
     .iOS(.v14)
   ],
   products: [
     .library(
-      name: "LogsSheetKit",
-      targets: ["LogsSheetKit"]),
+      name: "ComposableLogsSheetKit",
+      targets: ["ComposableLogsSheetKit"]),
   ],
   dependencies: [
     .package(url: "https://github.com/ivanvorobei/SPIndicator", .upToNextMajor(from: "1.6.0")),
@@ -18,13 +18,13 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "LogsSheetKit",
+      name: "ComposableLogsSheetKit",
       dependencies: [
         "SPIndicator",
         .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
       ]),
     .testTarget(
-      name: "LogsSheetKitTests",
-      dependencies: ["LogsSheetKit"]),
+      name: "ComposableLogsSheetKitTests",
+      dependencies: ["ComposableLogsSheetKit"]),
   ]
 )
