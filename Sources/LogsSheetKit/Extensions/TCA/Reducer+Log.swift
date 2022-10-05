@@ -10,7 +10,7 @@ import Foundation
 import ComposableArchitecture
 
 extension Reducer where State: LoggableState {
-  func log() -> Self {
+  public func log() -> Self {
     .init { state, action, environment in
       #if DEBUG || STG
       state.logs.append(.init(message: "\(action)"))

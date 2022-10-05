@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension View {
-  func modified<Modified: View>(@ViewBuilder modification: (Self) -> Modified) -> some View {
+  public func modified<Modified: View>(@ViewBuilder modification: (Self) -> Modified) -> some View {
     return modification(self)
   }
 }
