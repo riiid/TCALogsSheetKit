@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import LogsSheetKit
 @testable import ComposableLogsSheetKit
 
 final class LoggableStateTests: XCTestCase {

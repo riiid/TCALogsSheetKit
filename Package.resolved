@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "logssheetkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/riiid/LogsSheetKit",
+      "state" : {
+        "revision" : "5bb7cc405d718e86f9362e6a335230e2e295801b",
+        "version" : "0.9.0"
+      }
+    },
+    {
       "identity" : "spindicator",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ivanvorobei/SPIndicator",

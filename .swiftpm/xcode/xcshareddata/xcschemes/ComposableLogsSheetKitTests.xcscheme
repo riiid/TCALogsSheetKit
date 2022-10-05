@@ -14,9 +14,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "LogsSheetKitTests"
-               BuildableName = "LogsSheetKitTests"
-               BlueprintName = "LogsSheetKitTests"
+               BlueprintIdentifier = "ComposableLogsSheetKitTests"
+               BuildableName = "ComposableLogsSheetKitTests"
+               BlueprintName = "ComposableLogsSheetKitTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "LogsSheetKitTests"
-               BuildableName = "LogsSheetKitTests"
-               BlueprintName = "LogsSheetKitTests"
+               BlueprintIdentifier = "ComposableLogsSheetKitTests"
+               BuildableName = "ComposableLogsSheetKitTests"
+               BlueprintName = "ComposableLogsSheetKitTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -60,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "LogsSheetKitTests"
-            BuildableName = "LogsSheetKitTests"
-            BlueprintName = "LogsSheetKitTests"
+            BlueprintIdentifier = "ComposableLogsSheetKitTests"
+            BuildableName = "ComposableLogsSheetKitTests"
+            BlueprintName = "ComposableLogsSheetKitTests"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

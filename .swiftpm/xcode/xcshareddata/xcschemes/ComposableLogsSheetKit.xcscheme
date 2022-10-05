@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "LogsSheetKit"
-               BuildableName = "LogsSheetKit"
-               BlueprintName = "LogsSheetKit"
+               BlueprintIdentifier = "ComposableLogsSheetKit"
+               BuildableName = "ComposableLogsSheetKit"
+               BlueprintName = "ComposableLogsSheetKit"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "LogsSheetKitTests"
-               BuildableName = "LogsSheetKitTests"
-               BlueprintName = "LogsSheetKitTests"
+               BlueprintIdentifier = "ComposableLogsSheetKitTests"
+               BuildableName = "ComposableLogsSheetKitTests"
+               BlueprintName = "ComposableLogsSheetKitTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "LogsSheetKitTests"
-               BuildableName = "LogsSheetKitTests"
-               BlueprintName = "LogsSheetKitTests"
+               BlueprintIdentifier = "ComposableLogsSheetKitTests"
+               BuildableName = "ComposableLogsSheetKitTests"
+               BlueprintName = "ComposableLogsSheetKitTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -74,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "LogsSheetKit"
-            BuildableName = "LogsSheetKit"
-            BlueprintName = "LogsSheetKit"
+            BlueprintIdentifier = "ComposableLogsSheetKit"
+            BuildableName = "ComposableLogsSheetKit"
+            BlueprintName = "ComposableLogsSheetKit"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

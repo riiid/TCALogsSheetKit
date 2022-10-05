@@ -14,17 +14,22 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/ivanvorobei/SPIndicator", .upToNextMajor(from: "1.6.0")),
-    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", .upToNextMajor(from: "0.40.0"))
+    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", .upToNextMajor(from: "0.40.0")),
+    .package(url: "https://github.com/riiid/LogsSheetKit", .upToNextMajor(from: "0.9.0"))
   ],
   targets: [
     .target(
       name: "ComposableLogsSheetKit",
       dependencies: [
         "SPIndicator",
+        "LogsSheetKit",
         .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
       ]),
     .testTarget(
       name: "ComposableLogsSheetKitTests",
-      dependencies: ["ComposableLogsSheetKit"]),
+      dependencies: [
+        "ComposableLogsSheetKit",
+        "LogsSheetKit"
+      ]),
   ]
 )

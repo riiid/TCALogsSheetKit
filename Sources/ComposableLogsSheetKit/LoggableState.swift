@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import LogsSheetKit
 
 public protocol LoggableState: Equatable {
   var logs: [ActionLog] { get set }
