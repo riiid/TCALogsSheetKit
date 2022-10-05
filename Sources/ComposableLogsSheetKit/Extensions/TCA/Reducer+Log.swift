@@ -10,11 +10,11 @@ import Foundation
 import ComposableArchitecture
 
 extension Reducer where State: LoggableState {
-  public func log() -> Self {
+  public func log(isDebug: Bool) -> Self {
     .init { state, action, environment in
-      #if DEBUG || STG
-      state.logs.append(.init(message: "\(action)"))
-      #endif
+      if isDebug {
+        state.logs.append(.init(message: "\(action)"))
+      }
       return self.run(&state, action, environment)
     }
   }
