@@ -14,7 +14,7 @@ public protocol LoggableState: Equatable {
 }
 
 extension LoggableState {
-  var logs: [ActionLog] {
+  public var logs: [ActionLog] {
     get {
       return GlobalLogs.shared.logs
     }
