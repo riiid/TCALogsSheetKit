@@ -26,10 +26,13 @@ extension Reducer where State: LoggableState {
   /// - Parameters:
   ///   - isDebug: is debug configuration on
   ///   - message: custom log message
-  public func log(isDebug: Bool, with message: String) -> Self {
+  public func log(
+    isDebug: Bool,
+    with message: @escaping ((Action) -> String)
+  ) -> Self {
     .init { state, action, environment in
       if isDebug {
-        state.logs.append(.init(message: message))
+        state.logs.append(.init(message: message(action)))
       }
       return self.run(&state, action, environment)
     }
