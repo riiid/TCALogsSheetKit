@@ -3,26 +3,31 @@
 import PackageDescription
 
 let package = Package(
-  name: "LogsSheetKit",
+  name: "ComposableLogsSheetKit",
   platforms: [
     .iOS(.v14)
   ],
   products: [
     .library(
-      name: "LogsSheetKit",
-      targets: ["LogsSheetKit"]),
+      name: "ComposableLogsSheetKit",
+      targets: ["ComposableLogsSheetKit"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/ivanvorobei/SPIndicator", .upToNextMajor(from: "1.6.0"))
+    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", .upToNextMajor(from: "0.40.0")),
+    .package(url: "https://github.com/riiid/LogsSheetKit", .upToNextMajor(from: "0.9.0"))
   ],
   targets: [
     .target(
-      name: "LogsSheetKit",
+      name: "ComposableLogsSheetKit",
       dependencies: [
-        "SPIndicator"
+        "LogsSheetKit",
+        .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
       ]),
     .testTarget(
-      name: "LogsSheetKitTests",
-      dependencies: ["LogsSheetKit"]),
+      name: "ComposableLogsSheetKitTests",
+      dependencies: [
+        "ComposableLogsSheetKit",
+        "LogsSheetKit"
+      ]),
   ]
 )
