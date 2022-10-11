@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/riiid/LogsSheetKit",
       "state" : {
-        "branch" : "LogsSheetManager",
-        "revision" : "43271a68957b5b85ca00fdab35614be9384b33c2"
+        "revision" : "9e9eb5c6c160e354325e8623582a0d21502a49f9",
+        "version" : "1.0.0"
       }
     },
     {
