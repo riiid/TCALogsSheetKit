@@ -8,7 +8,7 @@
 
 import XCTest
 import LogsSheetKit
-@testable import ComposableLogsSheetKit
+@testable import TCALogsSheetKit
 
 final class LoggableStateTests: XCTestCase {
 }

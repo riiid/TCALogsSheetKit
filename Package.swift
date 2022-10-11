@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-  name: "ComposableLogsSheetKit",
+  name: "TCALogsSheetKit",
   platforms: [
     .iOS(.v14)
   ],
   products: [
     .library(
-      name: "ComposableLogsSheetKit",
-      targets: ["ComposableLogsSheetKit"]),
+      name: "TCALogsSheetKit",
+      targets: ["TCALogsSheetKit"]),
   ],
   dependencies: [
     .package(url: "https://github.com/pointfreeco/swift-composable-architecture", .exact("0.40.0")),
@@ -18,15 +18,15 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "ComposableLogsSheetKit",
+      name: "TCALogsSheetKit",
       dependencies: [
         "LogsSheetKit",
         .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
       ]),
     .testTarget(
-      name: "ComposableLogsSheetKitTests",
+      name: "TCALogsSheetKitTests",
       dependencies: [
-        "ComposableLogsSheetKit",
+        "TCALogsSheetKit",
         "LogsSheetKit"
       ]),
   ]
