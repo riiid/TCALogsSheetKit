@@ -11,6 +11,8 @@
 ## Introduction
 
 Lightweight customizable logger for iOS using Swift 5.7, with minimum iOS 14 version for [TCA](https://github.com/pointfreeco/swift-composable-architecture)
+
+
 <img width="473" alt="Screenshot 2022-10-11 at 2 35 12 PM" src="https://user-images.githubusercontent.com/46320390/195005069-492cda9a-2381-40fc-a94a-7a6c110d4a6a.png">
 
 
@@ -31,7 +33,7 @@ You also can add custom message if you want by simply doing:
   }
     .log(isDebug: true) { action in
       return "Riiid with \(action)"
-  }
+    }
 
 ```
 
