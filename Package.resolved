@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/riiid/LogsSheetKit",
       "state" : {
-        "revision" : "5bb7cc405d718e86f9362e6a335230e2e295801b",
-        "version" : "0.9.0"
+        "branch" : "LogsSheetManager",
+        "revision" : "43271a68957b5b85ca00fdab35614be9384b33c2"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-composable-architecture",
       "state" : {
-        "revision" : "9ea8c763061287052a68d5e6723fed45e898b7d9",
-        "version" : "0.40.2"
+        "revision" : "5b78fbcb0583568392762b15a262b3106cfb5185",
+        "version" : "0.40.0"
       }
     },
     {

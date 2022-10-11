@@ -12,19 +12,3 @@ import LogsSheetKit
 public protocol LoggableState: Equatable {
   var logs: [ActionLog] { get set }
 }
-
-extension LoggableState {
-  public var logs: [ActionLog] {
-    get {
-      return GlobalLogs.shared.logs
-    }
-    set {
-        GlobalLogs.shared.logs = newValue
-    }
-  }
-}
-
-struct GlobalLogs {
-  static var shared: GlobalLogs = GlobalLogs()
-  var logs: [ActionLog] = []
-}
