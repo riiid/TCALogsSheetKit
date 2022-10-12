@@ -24,16 +24,16 @@ In order to log any message, just add .log(isDebug: ) under your reducer.
 
 ``` swift
   }
-    .log(isDebug: true)
+  .log(isDebug: true)
 ```
 
 You also can add custom message if you want by simply doing: 
 
 ``` swift
   }
-    .log(isDebug: true) { action in
-      return "Riiid with \(action)"
-    }
+  .log(isDebug: true) { action in
+    return "Riiid with \(action)"
+  }
 
 ```
 
