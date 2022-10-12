@@ -13,7 +13,7 @@ let package = Package(
       targets: ["TCALogsSheetKit"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", .exact("0.40.0")),
+    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", .exact("0.40.2")),
     .package(url: "https://github.com/riiid/LogsSheetKit", from: "1.0.0")
   ],
   targets: [
