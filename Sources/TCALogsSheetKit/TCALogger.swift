@@ -10,12 +10,12 @@ import Foundation
 import ComposableArchitecture
 import LogsSheetKit
 
-extension Reducer {
+extension AnyReducer {
   /// Saves each action  run through the reducer as the log message if debug build configuration is on
   /// - Parameters:
   ///   - isDebug: is debug configuration on
   public func log(isDebug: Bool) -> Self {
-    Reducer.init { state, action, environment in
+    AnyReducer.init { state, action, environment in
       if isDebug {
         LogsSheetManager.shared.log(message: "\(action)")
       }
@@ -31,7 +31,7 @@ extension Reducer {
     isDebug: Bool,
     with message: @escaping ((Action) -> String)
   ) -> Self {
-    Reducer.init { state, action, environment in
+    AnyReducer.init { state, action, environment in
       if isDebug {
         LogsSheetManager.shared.log(message: message(action))
       }
