@@ -21,14 +21,17 @@ struct Counter: ReducerProtocol {
 
   }
 
-  func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
-    switch action {
-    case .increase:
-      state.count = state.count + 1
-      return .none
-    case .decrease:
-      state.count = state.count - 1
-      return .none
+  var body: some ReducerProtocol<State, Action> {
+    Reduce { (state, action) in
+      switch action {
+        case .increase:
+          state.count = state.count + 1
+          return .none
+        case .decrease:
+          state.count = state.count - 1
+          return .none
+        }
     }
+    self.log(isDebug: true)
   }
 }
