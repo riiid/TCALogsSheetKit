@@ -10,7 +10,7 @@ import ComposableArchitecture
 
 struct CounterEnvironment { }
 
-let counterReducer = Reducer<CounterState, CounterAction, CounterEnvironment> { state, action, _ in
+let counterReducer = AnyReducer<CounterState, CounterAction, CounterEnvironment> { state, action, _ in
   switch action {
   case .increase:
     state.count = state.count + 1
