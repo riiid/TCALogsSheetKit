@@ -10,7 +10,8 @@ import ComposableArchitecture
 import LogsSheetKit
 
 struct CounterView: View {
-  let store: Store<CounterState, CounterAction>
+  let store: StoreOf<Counter>
+
   @State private var isPresented: Bool = false
 
   var body: some View {
@@ -49,9 +50,8 @@ struct CounterView: View {
 struct CounterView_Previews: PreviewProvider {
   static var previews: some View {
     CounterView(store: Store(
-      initialState: CounterState(),
-      reducer: counterReducer,
-      environment: CounterEnvironment()
+      initialState: Counter.State(),
+      reducer: Counter()
     ))
   }
 }
