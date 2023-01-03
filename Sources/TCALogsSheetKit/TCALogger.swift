@@ -14,10 +14,15 @@ extension AnyReducer {
   /// Saves each action  run through the reducer as the log message if debug build configuration is on
   /// - Parameters:
   ///   - isDebug: is debug configuration on
-  public func log(isDebug: Bool) -> Self {
+  public func log(
+    isDebug: Bool,
+    fileName: StaticString = #fileID
+  ) -> Self {
     AnyReducer.init { state, action, environment in
       if isDebug {
-        LogsSheetManager.shared.log(message: "\(action)")
+        LogsSheetManager.shared.log(
+          message: "\(action)\n\(fileName)"
+        )
       }
       return self.run(&state, action, environment)
     }
@@ -44,10 +49,15 @@ extension ReducerProtocol {
   /// Saves each action  run through the reducer as the log message if debug build configuration is on
   /// - Parameters:
   ///   - isDebug: is debug configuration on
-  public func log(isDebug: Bool) -> some ReducerProtocol<State, Action> {
+  public func log(
+    isDebug: Bool,
+    fileName: StaticString = #fileID
+  ) -> some ReducerProtocol<State, Action> {
     Reduce { state, action in
       if isDebug {
-        LogsSheetManager.shared.log(message: "\(action)")
+        LogsSheetManager.shared.log(
+          message: "\(action)\n\(fileName)"
+        )
       }
       return self.reduce(into: &state, action: action)
     }
