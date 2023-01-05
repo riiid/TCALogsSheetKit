@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042A6373296557E00036B6FF /* EmojiPicker+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A636E296557E00036B6FF /* EmojiPicker+State.swift */; };
-		042A6374296557E00036B6FF /* EmojiPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A636F296557E00036B6FF /* EmojiPickerView.swift */; };
-		042A6375296557E00036B6FF /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A6370296557E00036B6FF /* EmojiPicker.swift */; };
-		042A6376296557E00036B6FF /* EmojiPicker+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A6371296557E00036B6FF /* EmojiPicker+Action.swift */; };
-		042A6377296557E00036B6FF /* EmojiPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A6372296557E00036B6FF /* EmojiPickerService.swift */; };
 		0478126B2963BA3300CD2D69 /* TCALoggerSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478126A2963BA3300CD2D69 /* TCALoggerSampleApp.swift */; };
 		0478126F2963BA3400CD2D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0478126E2963BA3400CD2D69 /* Assets.xcassets */; };
 		047812722963BA3400CD2D69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047812712963BA3400CD2D69 /* Preview Assets.xcassets */; };
@@ -24,6 +19,11 @@
 		047812A12963BA8200CD2D69 /* Counter+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478129C2963BA8200CD2D69 /* Counter+Action.swift */; };
 		047812A22963BA8200CD2D69 /* CounterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478129D2963BA8200CD2D69 /* CounterService.swift */; };
 		04FE33D129666A5900016D76 /* TCALogsSheetKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04FE33D029666A5900016D76 /* TCALogsSheetKit */; };
+		04FE34062966982200016D76 /* EmojiPicker+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34012966982100016D76 /* EmojiPicker+State.swift */; };
+		04FE34072966982200016D76 /* EmojiPicker+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34022966982200016D76 /* EmojiPicker+Action.swift */; };
+		04FE34082966982200016D76 /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34032966982200016D76 /* EmojiPicker.swift */; };
+		04FE34092966982200016D76 /* EmojiPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34042966982200016D76 /* EmojiPickerView.swift */; };
+		04FE340A2966982200016D76 /* EmojiPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34052966982200016D76 /* EmojiPickerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		042A636E296557E00036B6FF /* EmojiPicker+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiPicker+State.swift"; sourceTree = "<group>"; };
-		042A636F296557E00036B6FF /* EmojiPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerView.swift; sourceTree = "<group>"; };
-		042A6370296557E00036B6FF /* EmojiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
-		042A6371296557E00036B6FF /* EmojiPicker+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiPicker+Action.swift"; sourceTree = "<group>"; };
-		042A6372296557E00036B6FF /* EmojiPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerService.swift; sourceTree = "<group>"; };
 		047812672963BA3300CD2D69 /* TCALoggerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCALoggerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0478126A2963BA3300CD2D69 /* TCALoggerSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCALoggerSampleApp.swift; sourceTree = "<group>"; };
 		0478126E2963BA3400CD2D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +58,11 @@
 		0478129B2963BA8200CD2D69 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		0478129C2963BA8200CD2D69 /* Counter+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+Action.swift"; sourceTree = "<group>"; };
 		0478129D2963BA8200CD2D69 /* CounterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterService.swift; sourceTree = "<group>"; };
+		04FE34012966982100016D76 /* EmojiPicker+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiPicker+State.swift"; sourceTree = "<group>"; };
+		04FE34022966982200016D76 /* EmojiPicker+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiPicker+Action.swift"; sourceTree = "<group>"; };
+		04FE34032966982200016D76 /* EmojiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
+		04FE34042966982200016D76 /* EmojiPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerView.swift; sourceTree = "<group>"; };
+		04FE34052966982200016D76 /* EmojiPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,18 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		042A636D296557A80036B6FF /* EmpjiPicker */ = {
-			isa = PBXGroup;
-			children = (
-				042A636E296557E00036B6FF /* EmojiPicker+State.swift */,
-				042A636F296557E00036B6FF /* EmojiPickerView.swift */,
-				042A6370296557E00036B6FF /* EmojiPicker.swift */,
-				042A6371296557E00036B6FF /* EmojiPicker+Action.swift */,
-				042A6372296557E00036B6FF /* EmojiPickerService.swift */,
-			);
-			path = EmpjiPicker;
-			sourceTree = "<group>";
-		};
 		0478125E2963BA3300CD2D69 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +115,7 @@
 		047812692963BA3300CD2D69 /* TCALoggerSample */ = {
 			isa = PBXGroup;
 			children = (
-				042A636D296557A80036B6FF /* EmpjiPicker */,
+				04FE340B2966983A00016D76 /* Emoji */,
 				047812A32963BA8600CD2D69 /* Counter */,
 				0478126A2963BA3300CD2D69 /* TCALoggerSampleApp.swift */,
 				0478126E2963BA3400CD2D69 /* Assets.xcassets */,
@@ -178,6 +166,18 @@
 				0478129D2963BA8200CD2D69 /* CounterService.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		04FE340B2966983A00016D76 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				04FE34032966982200016D76 /* EmojiPicker.swift */,
+				04FE34022966982200016D76 /* EmojiPicker+Action.swift */,
+				04FE34012966982100016D76 /* EmojiPicker+State.swift */,
+				04FE34052966982200016D76 /* EmojiPickerService.swift */,
+				04FE34042966982200016D76 /* EmojiPickerView.swift */,
+			);
+			path = Emoji;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,15 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FE34062966982200016D76 /* EmojiPicker+State.swift in Sources */,
+				04FE34072966982200016D76 /* EmojiPicker+Action.swift in Sources */,
+				04FE34082966982200016D76 /* EmojiPicker.swift in Sources */,
+				04FE34092966982200016D76 /* EmojiPickerView.swift in Sources */,
+				04FE340A2966982200016D76 /* EmojiPickerService.swift in Sources */,
 				047812A02963BA8200CD2D69 /* Counter.swift in Sources */,
 				0478129E2963BA8200CD2D69 /* Counter+State.swift in Sources */,
-				042A6377296557E00036B6FF /* EmojiPickerService.swift in Sources */,
-				042A6374296557E00036B6FF /* EmojiPickerView.swift in Sources */,
 				047812A22963BA8200CD2D69 /* CounterService.swift in Sources */,
-				042A6375296557E00036B6FF /* EmojiPicker.swift in Sources */,
-				042A6376296557E00036B6FF /* EmojiPicker+Action.swift in Sources */,
 				047812A12963BA8200CD2D69 /* Counter+Action.swift in Sources */,
-				042A6373296557E00036B6FF /* EmojiPicker+State.swift in Sources */,
 				0478126B2963BA3300CD2D69 /* TCALoggerSampleApp.swift in Sources */,
 				0478129F2963BA8200CD2D69 /* CounterView.swift in Sources */,
 			);
