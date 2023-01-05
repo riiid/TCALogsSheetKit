@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TCALoggerSample/TCALoggerSample.xcodeproj">
+      location = "group:../..">
    </FileRef>
    <FileRef
-      location = "group:">
+      location = "container:">
    </FileRef>
 </Workspace>
