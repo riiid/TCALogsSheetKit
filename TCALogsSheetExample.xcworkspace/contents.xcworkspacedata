@@ -13,4 +13,7 @@
    <FileRef
       location = "group:../TCALoggerSample/TCALoggerSampleUITests">
    </FileRef>
+   <FileRef
+      location = "group:">
+   </FileRef>
 </Workspace>
