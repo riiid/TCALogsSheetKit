@@ -27,7 +27,7 @@ public struct EmojiPickerView: View {
         Text("\(currentEmojie.rawValue)")
       }
       Button("change emoji") {
-        viewStore.send(.changeEmojie)
+        viewStore.send(.changeEmoji)
       }
     }
   }

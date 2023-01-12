@@ -16,9 +16,9 @@ public struct EmojiPicker: ReducerProtocol {
   public var body: some ReducerProtocol<State, Action> {
     Reduce { state, action in
       switch action {
-      case .changeEmojie:
-        let randomIndex: Int = Int.random(in: 0..<state.emojies.count)
-        let randomEmoji = RiiidEmojies(rawValue: state.emojies[randomIndex])
+      case .changeEmoji:
+        let randomIndex: Int = Int.random(in: 0..<state.emojis.count)
+        let randomEmoji = RiiidEmojis(rawValue: state.emojis[randomIndex])
         state.currentEmoji = randomEmoji
         return .none
       }

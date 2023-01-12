@@ -9,6 +9,6 @@ import ComposableArchitecture
 
 extension EmojiPicker {
   public enum Action: Equatable {
-    case changeEmojie
+    case changeEmoji
   }
 }

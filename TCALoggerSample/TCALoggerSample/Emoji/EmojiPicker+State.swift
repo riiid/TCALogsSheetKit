@@ -9,17 +9,17 @@ import ComposableArchitecture
 
 extension EmojiPicker {
   public struct State: Equatable {
-    var currentEmoji: RiiidEmojies?
-    var emojies: [String]
+    var currentEmoji: RiiidEmojis?
+    var emojis: [String]
 
-    public init(currentEmojie: RiiidEmojies? = nil) {
-      self.currentEmoji = currentEmojie
-      self.emojies = RiiidEmojies.allCases.map { $0.rawValue }
+    public init(currentEmoji: RiiidEmojis? = nil) {
+      self.currentEmoji = currentEmoji
+      self.emojis = RiiidEmojis.allCases.map { $0.rawValue }
     }
   }
 }
 
-public enum RiiidEmojies: String, Equatable, CaseIterable {
+public enum RiiidEmojis: String, Equatable, CaseIterable {
   case 🧐
   case 🥸
   case 🤩
