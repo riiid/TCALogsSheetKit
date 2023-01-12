@@ -11,7 +11,6 @@ import LogsSheetKit
 
 struct Counter: ReducerProtocol {
   struct State: Equatable {
-    var logs: [ActionLog] = []
     var count = 0
   }
 
