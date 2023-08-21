@@ -42,7 +42,8 @@ struct EmojiPicker_Previews: PreviewProvider {
   }
 
   static let store: StoreOf<EmojiPicker> = .init(
-    initialState: .init(),
-    reducer: EmojiPicker()
-  )
+    initialState: .init()
+  ) {
+    EmojiPicker()
+  }
 }

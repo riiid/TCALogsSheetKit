@@ -80,8 +80,9 @@ public struct CounterView: View {
 struct CounterView_Previews: PreviewProvider {
   static var previews: some View {
     CounterView(store: Store(
-      initialState: Counter.State(),
-      reducer: Counter()
-    ))
+      initialState: Counter.State()
+    ) {
+      Counter()
+    })
   }
 }

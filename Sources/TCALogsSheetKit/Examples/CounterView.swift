@@ -49,9 +49,12 @@ struct CounterView: View {
 
 struct CounterView_Previews: PreviewProvider {
   static var previews: some View {
-    CounterView(store: Store(
-      initialState: Counter.State(),
-      reducer: Counter()
-    ))
+    CounterView(
+      store: .init(
+        initialState: Counter.State(),
+        reducer: {
+        Counter()
+      })
+    )
   }
 }

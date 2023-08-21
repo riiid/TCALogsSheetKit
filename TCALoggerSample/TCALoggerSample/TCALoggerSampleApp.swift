@@ -13,7 +13,13 @@ import ComposableArchitecture
 struct TCALoggerSampleApp: App {
     var body: some Scene {
         WindowGroup {
-          CounterView(store: Store(initialState: Counter.State(), reducer: Counter()))
+          CounterView(
+            store: Store(
+              initialState: Counter.State()
+            ) {
+              Counter()
+            }
+          )
         }
     }
 }
