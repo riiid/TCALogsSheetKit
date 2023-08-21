@@ -12,22 +12,24 @@ import ComposableArchitecture
 // MARK: - View
 
 public struct EmojiPickerView: View {
-  @ObservedObject
-  private var viewStore: ViewStoreOf<EmojiPicker>
   private let store: StoreOf<EmojiPicker>
 
   public init(store: StoreOf<EmojiPicker>) {
-    self.viewStore = .init(store)
     self.store = store
   }
 
   public var body: some View {
-    VStack(spacing: 20) {
-      if let currentEmojie = viewStore.currentEmoji {
-        Text("\(currentEmojie.rawValue)")
-      }
-      Button("change emoji") {
-        viewStore.send(.changeEmoji)
+    WithViewStore(
+      store,
+      observe: \.currentEmoji
+    ) { viewStore in
+      VStack(spacing: 20) {
+        if let currentEmojie = viewStore.state {
+          Text("\(currentEmojie.rawValue)")
+        }
+        Button("change emoji") {
+          viewStore.send(.changeEmoji)
+        }
       }
     }
   }
