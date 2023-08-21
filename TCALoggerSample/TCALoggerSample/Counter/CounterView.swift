@@ -19,7 +19,10 @@ public struct CounterView: View {
   @State private var isPresented: Bool = false
 
   public var body: some View {
-    WithViewStore(self.store) { store in
+    WithViewStore(
+      self.store,
+      observe: { $0 }
+    ) { store in
       NavigationView {
         VStack(spacing: 20) {
           Spacer()
@@ -80,8 +83,9 @@ public struct CounterView: View {
 struct CounterView_Previews: PreviewProvider {
   static var previews: some View {
     CounterView(store: Store(
-      initialState: Counter.State(),
-      reducer: Counter()
-    ))
+      initialState: Counter.State()
+    ) {
+      Counter()
+    })
   }
 }

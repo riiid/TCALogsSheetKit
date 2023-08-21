@@ -8,12 +8,12 @@
 import ComposableArchitecture
 import Dependencies
 
-public struct EmojiPicker: ReducerProtocol {
+public struct EmojiPicker: Reducer {
   @Dependency(\.serviceBackgroundChanger) private var serviceBackgroundChanger
   
   public init() {}
   
-  public var body: some ReducerProtocol<State, Action> {
+  public var body: some Reducer<State, Action> {
     Reduce { state, action in
       switch action {
       case .changeEmoji:

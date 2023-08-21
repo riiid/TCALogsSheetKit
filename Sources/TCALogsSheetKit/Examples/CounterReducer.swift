@@ -9,7 +9,7 @@ import ComposableArchitecture
 import Foundation
 import LogsSheetKit
 
-struct Counter: ReducerProtocol {
+struct Counter: Reducer {
   struct State: Equatable {
     var logs: [ActionLog] = []
     var count = 0
@@ -21,7 +21,7 @@ struct Counter: ReducerProtocol {
 
   }
 
-  var body: some ReducerProtocol<State, Action> {
+  var body: some Reducer<State, Action> {
     Reduce { (state, action) in
       switch action {
         case .increase:
