@@ -9,12 +9,12 @@ import ComposableArchitecture
 import Dependencies
 import TCALogsSheetKit
 
-public struct Counter: ReducerProtocol {
+public struct Counter: Reducer {
   @Dependency(\.serviceCounter) private var serviceCounter
 
   public init() {}
 
-  public var body: some ReducerProtocol<State, Action> {
+  public var body: some Reducer<State, Action> {
     Reduce { state, action in
       switch action {
       case .increase:
