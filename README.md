@@ -65,13 +65,6 @@ In order to contribute, please subbranch from main, and after finishing the work
 
 Please provide as much information about your proposed changes as possible.
 
-## Maintainers
-
-- [tisohjung](https://github.com/tisohjung)
-- [korJAEYOUNGYUN](https://github.com/korJAEYOUNGYUN)
-- [SongJiyeon](https://github.com/SongJiyeon) 
-- [yermukhanbet](https://github.com/yermukhanbet)
-
 ## License
 
 TCALogsSheetKit is under MIT license. See the [LICENSE](https://github.com/riiid/TCALogsSheetKit/blob/main/LICENSE.md) for more info.
